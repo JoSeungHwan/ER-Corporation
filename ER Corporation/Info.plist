@@ -2,6 +2,23 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>&lt;key&gt;BGTaskSchedulerPermittedIdentifiers&lt;/key&gt;
+&lt;array&gt;
+    &lt;string&gt;$(PRODUCT_BUNDLE_IDENTIFIER)&lt;/string&gt;
+&lt;/array&gt;\</string>
+		<string>&lt;key&gt;BGTaskSchedulerPermittedIdentifiers&lt;/key&gt;
+&lt;array&gt;
+    &lt;string&gt;com.yourCompanyName.appName1&lt;/string&gt;
+    &lt;string&gt;com.yourCompanyName.appName2&lt;/string&gt;
+&lt;/array&gt;</string>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -21,5 +38,10 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>processing</string>
+		<string>remote-notification</string>
+	</array>
 </dict>
 </plist>
